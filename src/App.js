@@ -6,6 +6,7 @@ import SearchBox from "./components/SearchBox";
 import Scroll from "./components/Scroll";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Header from "./components/Header";
+import "./App.css";
 
 const App = () => {
 const dispatch = useDispatch();
