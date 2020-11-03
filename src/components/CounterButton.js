@@ -17,7 +17,6 @@ import React, {useState} from "react";
 //   };
 
 //   render() {
-//     console.log("CounterButton");
 //     return (
 //       <button color={this.props.color} onClick={this.updateCount}>
 //         Count: {this.state.count}
@@ -28,7 +27,7 @@ import React, {useState} from "react";
 
 // export default CounterButton;
 
-const CounterButton = React.memo((props) => {
+const CounterButton = props => {
   const [count, setCount] = useState(0)
 
   return (
@@ -36,6 +35,6 @@ const CounterButton = React.memo((props) => {
         Count: {count}
       </button>
     );
-})
+}
 
 export default CounterButton
