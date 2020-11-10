@@ -6,7 +6,8 @@ import {Provider} from "react-redux"
 import thunkMiddleware from "redux-thunk";
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 // import {createLogger} from 'redux-logger';
-import {searchRobots, requestRobots} from "./reducers/searchReducer"
+import {searchRobots} from "redux/reducers/searchReducer"
+import { requestRobots } from "redux/reducers/requestReducer";
 import App from "./App";
 import "tachyons";
 import "./index.css";
