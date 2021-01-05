@@ -4,7 +4,7 @@ exports[`test MainPage should render the App component 1`] = `
 <div
   className="tc"
 >
-  <Memo(Header) />
+  <Header />
   <SearchBox />
   <Scroll>
     <ErrorBoundary>
