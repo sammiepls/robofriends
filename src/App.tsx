@@ -48,7 +48,7 @@ interface AppState {
 const App:React.FC<AppState> = () => {
 const dispatch = useDispatch();
 
-const onSearchChange = (event: React.SyntheticEvent<HTMLInputElement>) => dispatch(setSearchField(event.target.value));
+const onSearchChange = (event: React.SyntheticEvent<HTMLInputElement>) => dispatch(setSearchField((event.target as HTMLInputElement).value));
 
 const {robots, isPending} = useSelector((state:AppState) => state.requestRobots);
 const {searchField} = useSelector((state:AppState) => state.searchRobots);
